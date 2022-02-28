@@ -45,11 +45,7 @@ def not_hesapla(satır):
 
 with open("dosya.txt","r",encoding= "utf-8") as file:
 
-    eklenecekler_listesi = []
-
-    for i in file:
-
-        eklenecekler_listesi.append(not_hesapla(i))
+    eklenecekler_listesi = [not_hesapla(i) for i in file]
 
     with open("notlar.txt","w",encoding="utf-8") as file2:
 

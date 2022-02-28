@@ -20,7 +20,7 @@ while True: # Kullanıcı Doğru Giriş Yaptığında ve Giriş Hakkı bittiğin
         giriş_hakkı -= 1
 
         print("Giriş Hakkı: ", giriş_hakkı)
-    elif (kullanıcı_adı != sys_kul_adı and parola != sys_parola):
+    elif kullanıcı_adı != sys_kul_adı:
         print("Kullanıcı Adı ve Parola Hatalı...")
         giriş_hakkı -= 1
         print("Giriş Hakkı: ", giriş_hakkı)

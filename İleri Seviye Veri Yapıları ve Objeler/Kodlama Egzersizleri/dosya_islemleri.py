@@ -7,7 +7,7 @@ class Dosya():
             dosya_icerigi = file.read()
 
             kelimeler = dosya_icerigi.split()
-            self.sade_kelimeler = list()
+            self.sade_kelimeler = []
 
             for i in kelimeler:
                 i = i.strip("\n")
@@ -19,10 +19,7 @@ class Dosya():
                 self.sade_kelimeler.append(i)
     def tum_kelimeler(self):
 
-        kelimeler_kümesi = set()
-
-        for i in self.sade_kelimeler:
-            kelimeler_kümesi.add(i)
+        kelimeler_kümesi = set(self.sade_kelimeler)
 
         print("Tüm kelimeler........")
 
@@ -35,7 +32,7 @@ class Dosya():
 
     def kelime_frekansı(self):
 
-        kelime_sözlük = dict()
+        kelime_sözlük = {}
 
 
         for i in self.sade_kelimeler:

@@ -25,10 +25,8 @@ def ekstra(fonk):
 @ekstra
 def ortalamabul(sayılar):
 
-    toplam = 0
+    toplam = sum(sayılar)
 
-    for sayı in sayılar:
-        toplam += sayı
     print("Genel Ortalama:",toplam/len(sayılar))
 
 

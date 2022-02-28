@@ -65,7 +65,7 @@ class Pencere(QtWidgets.QWidget):
         if len(data) == 0:
             self.yazi_alani.setText("Böyle bir kullanıcı yok\nLütfen tekrar deneyin.")
         else:
-            self.yazi_alani.setText("Hoşgeldiniz " + adi)
+            self.yazi_alani.setText(f"Hoşgeldiniz {adi}")
 
 
 

@@ -37,7 +37,7 @@ class Pencere(QtWidgets.QWidget):
         self.show()
     def click(self):
         self.say += 1
-        self.yazı_alanı.setText("Bana " + str(self.say) + " defa tıklandı.")
+        self.yazı_alanı.setText(f"Bana {str(self.say)} defa tıklandı.")
 
 
 

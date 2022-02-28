@@ -15,7 +15,7 @@ if (kullanıcı_adı != sys_kul_adı and parola == sys_parola):
 elif (kullanıcı_adı == sys_kul_adı and parola != sys_parola):
     print("Parola Hatalı...")
 
-elif (kullanıcı_adı != sys_kul_adı and parola != sys_parola):
+elif kullanıcı_adı != sys_kul_adı:
     print("Kullanıcı Adı ve Parola Hatalı...")
 
 else:
